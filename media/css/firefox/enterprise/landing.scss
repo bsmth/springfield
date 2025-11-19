@@ -266,7 +266,7 @@ $color-charcoal: #333336;
             margin-bottom: 0;
         }
 
-        .platform-win64 {
+        .platform-win {
             .enterprise-download-title {
                 grid-area: title-col1;
             }
@@ -280,7 +280,7 @@ $color-charcoal: #333336;
             }
         }
 
-        .platfom-mac {
+        .platform-mac {
             .enterprise-download-title {
                 grid-area: title-col2;
             }
@@ -294,7 +294,7 @@ $color-charcoal: #333336;
             }
         }
 
-        .platform-win32 {
+        .platform-linux {
             .enterprise-download-title {
                 grid-area: title-col3;
             }
@@ -336,7 +336,7 @@ $color-charcoal: #333336;
         width: 40px;
     }
 
-    .platform-win64 &::before {
+    .platform-win &::before {
         background-image: url('/media/img/firefox/enterprise/icon-win64.svg');
         background-size: 35px 36px;
     }
@@ -346,8 +346,8 @@ $color-charcoal: #333336;
         background-size: 29px 36px;
     }
 
-    .platform-win32 &::before {
-        background-image: url('/media/img/firefox/enterprise/icon-win32.svg');
+    .platform-linux &::before {
+        background-image: url('/media/img/firefox/enterprise/icon-win64.svg');
         background-size: 35px 36px;
     }
 }

@@ -19,6 +19,7 @@
 
 {% set params = '?utm_source=www.firefox.com&utm_medium=referral&utm_campaign=enterprise' %}
 {% set win_download_lang = LANG %}
+{% set linux_download_lang = LANG %}
 {% set mac_download_lang = "ja-JP-mac" if LANG == "ja" else LANG %}
 
 {% block body_id %}firefox{% endblock %}
@@ -147,30 +148,50 @@
 
       <div class="enterprise-download-lists">
 
-        <section class="enterprise-download-block platform-win64">
-          <h3 class="enterprise-download-title">{{ ftl('firefox-enterprise-windows-64-bit') }}</h3>
+        <section class="enterprise-download-block platform-win">
+          <h3 class="enterprise-download-title">{{ ftl('firefox-enterprise-windows') }}</h3>
 
           <div class="mzp-c-menu-list mzp-t-cta mzp-t-download" id="win64-download-list">
             <h4 class="mzp-c-menu-list-title" data-testid="firefox-enterprise-win64-menu-button">{{ ftl('firefox-enterprise-select-your-download') }}</h4>
             <ul class="mzp-c-menu-list-list download-platform-list">
               <li class="mzp-c-menu-list-item">
                 <a class="download-link ga-product-download" href="https://download.mozilla.org/?product=firefox-latest-ssl&os=win64&lang={{ win_download_lang }}" data-download-version="win64" data-cta-text="Win64 - Download - Firefox" data-testid="firefox-enterprise-win64-menu-link">
-                  {{ ftl('firefox-enterprise-firefox-browser') }}
+                  {{ ftl('firefox-enterprise-firefox-browser-64-bit') }}
                 </a>
               </li>
               <li class="mzp-c-menu-list-item">
                 <a class="download-link ga-product-download" href="https://download.mozilla.org/?product=firefox-msi-latest-ssl&os=win64&lang={{ win_download_lang }}" data-download-version="win64-msi" data-cta-text="Win64 - Download - Firefox MSI" data-testid="firefox-enterprise-win64-msi-menu-link">
-                  {{ ftl('firefox-enterprise-firefox-browser-msi-installer') }}
+                  {{ ftl('firefox-enterprise-firefox-browser-msi-64') }}
                 </a>
               </li>
               <li class="mzp-c-menu-list-item">
                 <a class="download-link ga-product-download" href="https://download.mozilla.org/?product=firefox-esr-latest-ssl&os=win64&lang={{ win_download_lang }}" data-download-version="win64" data-cta-text="Win64 - Download - Firefox ESR" data-testid="firefox-enterprise-win64-esr-menu-link">
-                  {{ ftl('firefox-enterprise-firefox-extended-support-release') }}
+                  {{ ftl('firefox-enterprise-firefox-esr-64') }}
                 </a>
               </li>
               <li class="mzp-c-menu-list-item">
                 <a class="download-link ga-product-download" href="https://download.mozilla.org/?product=firefox-esr-msi-latest-ssl&os=win64&lang={{ win_download_lang }}" data-download-version="win64-msi" data-cta-text="Win64 - Download - Firefox ESR MSI" data-testid="firefox-enterprise-win64-esr-msi-menu-link">
-                  {{ ftl('firefox-enterprise-firefox-extended-support-release-msi') }}
+                  {{ ftl('firefox-enterprise-firefox-esr-msi-64') }}
+                </a>
+              </li>
+              <li class="mzp-c-menu-list-item">
+                <a class="download-link ga-product-download" href="https://download.mozilla.org/?product=firefox-latest-ssl&os=win&lang={{ win_download_lang }}" data-download-version="win" data-cta-text="Win32 - Download - Firefox" data-testid="firefox-enterprise-win32-menu-link">
+                  {{ ftl('firefox-enterprise-firefox-browser-32-bit') }}
+                </a>
+              </li>
+              <li class="mzp-c-menu-list-item">
+                <a class="download-link ga-product-download" href="https://download.mozilla.org/?product=firefox-msi-latest-ssl&os=win&lang={{ win_download_lang }}" data-download-version="win-msi" data-cta-text="Win32 - Download - Firefox MSI" data-testid="firefox-enterprise-win32-msi-menu-link">
+                  {{ ftl('firefox-enterprise-firefox-browser-msi-32') }}
+                </a>
+              </li>
+              <li class="mzp-c-menu-list-item">
+                <a class="download-link ga-product-download" href="https://download.mozilla.org/?product=firefox-esr-latest-ssl&os=win&lang={{ win_download_lang }}" data-download-version="win" data-cta-text="Win32 - Download - Firefox ESR" data-testid="firefox-enterprise-win32-esr-menu-link">
+                  {{ ftl('firefox-enterprise-firefox-esr-32') }}
+                </a>
+              </li>
+              <li class="mzp-c-menu-list-item">
+                <a class="download-link ga-product-download" href="https://download.mozilla.org/?product=firefox-esr-msi-latest-ssl&os=win&lang={{ win_download_lang }}" data-download-version="win-msi" data-cta-text="Win32 - Download - Firefox ESR MSI" data-testid="firefox-enterprise-win32-esr-msi-menu-link">
+                  {{ ftl('firefox-enterprise-firefox-esr-msi-32') }}
                 </a>
               </li>
             </ul>
@@ -222,30 +243,35 @@
           </div>
         </section>
 
-        <section class="enterprise-download-block platform-win32">
-          <h3 class="enterprise-download-title">{{ ftl('firefox-enterprise-windows-32-bit') }}</h3>
+        <section class="enterprise-download-block platform-linux">
+          <h3 class="enterprise-download-title">{{ ftl('firefox-enterprise-linux') }}</h3>
 
           <div class="mzp-c-menu-list mzp-t-cta mzp-t-download" id="win32-download-list">
             <h4 class="mzp-c-menu-list-title" data-testid="firefox-enterprise-win32-menu-button">{{ ftl('firefox-enterprise-select-your-download') }}</h4>
             <ul class="mzp-c-menu-list-list download-platform-list">
               <li class="mzp-c-menu-list-item">
-                <a class="download-link ga-product-download" href="https://download.mozilla.org/?product=firefox-latest-ssl&os=win&lang={{ win_download_lang }}" data-download-version="win" data-cta-text="Win32 - Download - Firefox" data-testid="firefox-enterprise-win32-menu-link">
-                  {{ ftl('firefox-enterprise-firefox-browser') }}
+                <a class="download-link ga-product-download" href="https://download.mozilla.org/?product=firefox-latest-ssl&os=linux64&lang={{ linux_download_lang }}" data-download-version="linux64" data-cta-text="Linux64 - Download - Firefox" data-testid="firefox-enterprise-linux64-menu-link">
+                  {{ ftl('firefox-enterprise-firefox-browser-linux-64') }}
                 </a>
               </li>
               <li class="mzp-c-menu-list-item">
-                <a class="download-link ga-product-download" href="https://download.mozilla.org/?product=firefox-msi-latest-ssl&os=win&lang={{ win_download_lang }}" data-download-version="win-msi" data-cta-text="Win32 - Download - Firefox MSI" data-testid="firefox-enterprise-win32-msi-menu-link">
-                  {{ ftl('firefox-enterprise-firefox-browser-msi-installer') }}
+                <a class="download-link ga-product-download" href="https://download.mozilla.org/?product=firefox-latest-ssl&os=linux64-aarch64&lang={{ linux_download_lang }}" data-download-version="linux64-aarch64" data-cta-text="Linux64-aarch64 - Download - Firefox" data-testid="firefox-enterprise-linux64-aarch64-menu-link">
+                  {{ ftl('firefox-enterprise-firefox-browser-linux-arm64') }}
                 </a>
               </li>
               <li class="mzp-c-menu-list-item">
-                <a class="download-link ga-product-download" href="https://download.mozilla.org/?product=firefox-esr-latest-ssl&os=win&lang={{ win_download_lang }}" data-download-version="win" data-cta-text="Win32 - Download - Firefox ESR" data-testid="firefox-enterprise-win32-esr-menu-link">
-                  {{ ftl('firefox-enterprise-firefox-extended-support-release') }}
+                <a class="download-link ga-product-download" href="https://download.mozilla.org/?product=firefox-latest-ssl&os=linux64&lang={{ linux_download_lang }}" data-download-version="linux64" data-cta-text="Linux64 - Download - Firefox" data-testid="firefox-enterprise-linux64-menu-link">
+                  {{ ftl('firefox-enterprise-firefox-browser-linux-esr-64') }}
                 </a>
               </li>
               <li class="mzp-c-menu-list-item">
-                <a class="download-link ga-product-download" href="https://download.mozilla.org/?product=firefox-esr-msi-latest-ssl&os=win&lang={{ win_download_lang }}" data-download-version="win-msi" data-cta-text="Win32 - Download - Firefox ESR MSI" data-testid="firefox-enterprise-win32-esr-msi-menu-link">
-                  {{ ftl('firefox-enterprise-firefox-extended-support-release-msi') }}
+                <a class="download-link ga-product-download" href="https://download.mozilla.org/?product=firefox-latest-ssl&os=linux64-aarch64&lang={{ linux_download_lang }}" data-download-version="linux64-aarch64" data-cta-text="Linux64-aarch64 - Download - Firefox" data-testid="firefox-enterprise-linux64-aarch64-menu-link">
+                  {{ ftl('firefox-enterprise-firefox-browser-linux-esr-arm64-64') }}
+                </a>
+              </li>
+              <li class="mzp-c-menu-list-item">
+                <a class="download-link ga-product-download" href="https://download.mozilla.org/?product=firefox-latest-ssl&os=linux64-aarch64&lang={{ linux_download_lang }}" data-download-version="linux64-aarch64" data-cta-text="Linux64-aarch64 - Download - Firefox" data-testid="firefox-enterprise-linux64-aarch64-menu-link">
+                  {{ ftl('firefox-enterprise-firefox-browser-linux-esr-32') }}
                 </a>
               </li>
             </ul>
@@ -254,13 +280,7 @@
           <div class="enterprise-download-support">
             <h4 class="enterprise-download-subtitle">{{ ftl('firefox-enterprise-resources') }}</h4>
             <ul class="mzp-u-list-styled">
-              <li><a href="https://support.mozilla.org/kb/deploy-firefox-msi-installers/{{ params }}">{{ ftl('firefox-enterprise-msi-installers') }}</a></li>
-              <li><a href="https://support.mozilla.org/kb/legacy-browser-support-extension-windows/{{ params }}">{{ ftl('firefox-enterprise-legacy-browser-support') }}</a></li>
-              <li><a href="https://support.mozilla.org/kb/customizing-firefox-using-group-policy-windows/{{ params }}">{{ ftl('firefox-enterprise-admx-templates') }}</a></li>
-              <li><a href="https://assets.mozilla.net/pdf/Firefox.for.Enterprise.Browser.Deployment.Guide.pdf">{{ ftl('firefox-enterprise-deployment-guide') }}</a></li>
-              <li><a href="https://github.com/mozilla/policy-templates/blob/master/README.md">{{ ftl('firefox-enterprise-policy-documentation') }}</a></li>
-              <li><a href="https://support.mozilla.org/kb/where-find-release-notes-firefox-enterprise/{{ params }}">{{ ftl('firefox-enterprise-release-notes') }}</a></li>
-              <li><a href="https://support.mozilla.org/products/firefox-enterprise/{{ params }}">{{ ftl('firefox-enterprise-documentation-and-community') }}</a></li>
+              <li>one</li>
             </ul>
           </div>
         </section>

@@ -23,6 +23,7 @@ firefox-enterprise-install-packages-policies = With install packages and a wide 
 firefox-enterprise-release-cycles = Release cycles that fit your organization
 firefox-enterprise-choose-firefox-for-features-esr-stability = Choose { -brand-name-firefox } for the latest features and stable releases every four weeks, or { -brand-name-firefox-esr } for long-term stability, regular security updates, and annual major releases.
 firefox-enterprise-enterprise-downloads = { -brand-name-enterprise } downloads
+firefox-enterprise-windows = { -brand-name-windows }
 firefox-enterprise-windows-64-bit = { -brand-name-windows } 64-bit
 firefox-enterprise-macos = { -brand-name-mac }
 firefox-enterprise-select-your-download = Select your download
@@ -39,12 +40,28 @@ firefox-enterprise-policy-documentation = Policy documentation
 firefox-enterprise-release-notes = Release Notes
 firefox-enterprise-documentation-and-community = Documentation and Community Support
 
+firefox-enterprise-firefox-browser-linux-64 = { -brand-name-firefox } (64-bit)
+firefox-enterprise-firefox-browser-linux-arm64 = { -brand-name-firefox } (ARM64/AArch64)
+firefox-enterprise-firefox-browser-linux-esr-32 = { firefox-enterprise-firefox-extended-support-release } (32-bit)
+firefox-enterprise-firefox-browser-linux-esr-64 = { firefox-enterprise-firefox-extended-support-release } (64-bit)
+firefox-enterprise-firefox-browser-linux-esr-arm64-64 = { firefox-enterprise-firefox-extended-support-release } (ARM64/AArch64)
+
+firefox-enterprise-firefox-browser-32-bit = { -brand-name-firefox } (32-bit)
+firefox-enterprise-firefox-browser-64-bit = { -brand-name-firefox } (64-bit)
+firefox-enterprise-firefox-esr-32 = { firefox-enterprise-firefox-extended-support-release } (32-bit)
+firefox-enterprise-firefox-esr-64 = { firefox-enterprise-firefox-extended-support-release } (64-bit)
+firefox-enterprise-firefox-browser-msi-32 = { -brand-name-firefox } MSI installer (32-bit)
+firefox-enterprise-firefox-browser-msi-64 = { -brand-name-firefox } MSI installer (64-bit)
+firefox-enterprise-firefox-esr-msi-32 = { firefox-enterprise-firefox-extended-support-release } MSI installer (32-bit)
+firefox-enterprise-firefox-esr-msi-64 = { firefox-enterprise-firefox-extended-support-release } MSI installer (64-bit)
+
 # Variables:
 #   $url (url) - link to https://github.com/mozilla/policy-templates/blob/master/mac/org.mozilla.firefox.plist
 firefox-enterprise-sample-plist-for-configuration = Sample <a href="{ $url }">plist for configuration profile</a>
 
 firefox-enterprise-pkg-installer = PKG installer
 firefox-enterprise-windows-32-bit = { -brand-name-windows } 32-bit
+firefox-enterprise-linux = { -brand-name-linux }
 
 # Variables:
 #   $firefox_all (url) - link to https://www.firefox.com/download/all/
